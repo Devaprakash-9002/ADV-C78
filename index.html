@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Arrays</title>
+    </head>
+
+    <body>
+        <p>Declaring variables with arrays</p>
+        <h4 id="declaring-variables"></h4>
+        <script>
+            var fruits=["Apple", "Orange", "Banana"];
+            console.log(fruits);
+            document.getElementById("declaring-variables").innerHTML = fruits;
+        </script>
+        <p>How to fetch first element of an array?</p>
+        <h4 id="fetch-1"></h4>
+        <script>
+            var fruits1= fruits[0];
+            console.log(fruits1);
+            document.getElementById("fetch-1").innerHTML = fruits1;
+        </script>   
+        <p>How to fetch third element of an array?</p>
+        <h4 id="fetch-3"></h4>
+        <script>
+            var fruits3= fruits[2];
+            console.log(fruits3);
+            document.getElementById("fetch-3").innerHTML = fruits3;
+        </script>
+        <p>How to find length of an array?</p>
+        <h4 id="array-len"></h4>
+        <script>
+            var finLen=fruits.length;
+            console.log(finLen);
+            document.getElementById("array-len").innerHTML = finLen;
+        </script>
+        <p>How to loop an array?</p>
+        <h4 id="array-loop"></h4>
+        <script>
+            var loopFin="";
+            for (i = 0; i < fruits.length; i++)
+            {console.log(fruits[i]);
+            loopFin=loopFin+fruits[i] + "<br>";}
+            document.getElementById("array-loop").innerHTML = loopFin;
+        </script>
+        <p>How to add an element to an array</p>
+        <h4 id="array-add"></h4>
+        <script>
+            fruits.push("Kiwi");
+            console.log(fruits);
+            document.getElementById("array-add").innerHTML = fruits;
+        </script>
+        <p>How to add an element to an array</p>
+        <h4 id="array-add2"></h4>
+        <script>
+            fruits.push("Papaya");
+            console.log(fruits);
+            document.getElementById("array-add2").innerHTML = fruits;
+        </script>
+        <p>Array with alphabets</p>
+        <h4 id="array_alpha"></h4>
+        <script>
+            var alphabets=["a", "g", "l", "k", "y", "m", "z"];
+            console.log(alphabets);
+            document.getElementById("array_alpha").innerHTML=alphabets; 
+        </script>
+        <p>How to sort an array?</p>
+        <h4 id="array-sort"></h4>
+        <script>
+            alphabets.sort();
+            console.log(alphabets);
+            document.getElementById("array-sort").innerHTML = alphabets;
+        </script>
+        <p>How to reverse an array?</p>
+        <h4 id="array-rev"></h4>
+        <script>
+            alphabets.reverse();
+            console.log(alphabets);
+            document.getElementById("array-rev").innerHTML = alphabets;
+        </script>
+        <p>Declaring number</p>
+        <h4 id="array-num"></h4>
+        <script>
+            var nums=["45", "4", "9", "16", "25"];
+            console.log(nums);
+            document.getElementById("array-num").innerHTML = nums;
+        </script>
+        <p>How to find max. number in an array?</p>
+        <h4 id="array-max"></h4>
+        <script>
+            var max_num=Math.max.apply(Math, nums);
+            console.log(max_num);
+            document.getElementById("array-max").innerHTML = max_num;
+        </script>
+        <p>How to find min. number in an array?</p>
+        <h4 id="array-min"></h4>
+        <script>
+            var min_num=Math.min.apply(Math, nums);
+            console.log(min_num);
+            document.getElementById("array-min").innerHTML = min_num;
+        </script>
+    </body>
+</html>
